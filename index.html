@@ -1,0 +1,252 @@
+<!-- FILEPATH: /Users/anawagner/code/dashboard/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <title>Dashboard</title>
+</head>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<!-- <span class="iconify" data-icon="mdi-account"></span> -->
+
+<body>
+  <header>
+    <div class="search">
+      <iconify-icon icon="material-symbols:search"></iconify-icon>
+      <input type="text" placeholder="Search">
+    </div>
+    <div class="user">
+      <div class="notification">
+        <a href="#notification"><iconify-icon icon="mi:notification"></iconify-icon></a>
+      </div>
+      <img src="./img/woman.png" alt="avatar" class="avatar" />
+      <span class="name">Ana Wagner</span>
+    </div>
+    <div class="greeting">
+      <img src="./img/woman.png" alt="avatar" class="avatar" />
+      <p>Hi there,</p>
+      <p class="name">Ana Wagner (@yogacat)</p>
+    </div>
+    <div class="actions">
+      <button>New</button>
+      <button>Upload</button>
+      <button>Share</button>
+    </div>
+  </header>
+
+  <aside>
+    <div class="logo">
+      <iconify-icon icon="mdi:view-dashboard"></iconify-icon>
+      <h1>Dashboard</h1>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="#home">
+            <iconify-icon icon="mdi:home"></iconify-icon>
+            <span>Home</span>
+          </a></li>
+        <li><a href="#profile">
+            <iconify-icon icon="mdi:card-account-details-outline"></iconify-icon>
+            <span>Profile</span>
+          </a></li>
+        <li><a href="#messages">
+            <iconify-icon icon="mdi:message-reply"></iconify-icon>
+            <span>Messages</span>
+          </a></li>
+        <li><a href="#history">
+            <iconify-icon icon="mdi:history"></iconify-icon>
+            <span>History</span>
+          </a></li>
+        <li><a href="#tasks">
+            <iconify-icon icon="mdi:calendar-check-outline"></iconify-icon>
+            <span>Tasks</span>
+          </a></li>
+        <li><a href="#communities">
+            <iconify-icon icon="mdi:account-group"></iconify-icon>
+            <span>Communities</span>
+          </a></li>
+      </ul>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="#settings">
+            <iconify-icon icon="mdi:cog"></iconify-icon>
+            <span>Settings</span>
+          </a></li>
+        <li><a href="#support">
+            <iconify-icon icon="mdi:help-box"></iconify-icon>
+            <span>Support</span>
+          </a></li>
+        <li><a href="#privacy">
+            <iconify-icon icon="mdi:shield-lock-outline"></iconify-icon>
+            <span>Privacy</span>
+          </a></li>
+      </ul>
+    </div>
+
+    <div class="credits">
+      <a href="https://www.flaticon.com/free-icons/animals" title="animals icons">Animals icons created by Freepik -
+        Flaticon</a>
+      <a href="https://www.flaticon.com/free-icons/avatar" title="avatar icons">Avatar icons created by Freepik -
+        Flaticon</a>
+      <a href="https://www.flaticon.com/free-icons/astronaut" title="astronaut icons">Astronaut icons created by Freepik
+        - Flaticon</a>
+      <a href="https://www.flaticon.com/free-icons/people" title="people icons">People icons created by Creartive -
+        Flaticon</a>
+      <a href="https://www.flaticon.com/free-icons/batman" title="batman icons">Batman icons created by Smashicons -
+        Flaticon</a>
+    </div>
+  </aside>
+
+  <main>
+    <div>
+      <h2>Your Projects</h2>
+      <div class="projects">
+
+        <div class="card">
+          <div class="card-content">
+            <h3>Super Cool Project</h3>
+            <p>Vivamus et purus et lorem tempor volutpat sed dapibus mi.
+              Morbi at dui maximus, consectetur nulla sit amet, iaculis
+              ante. Vestibulum id facilisis justo, sit amet suscipit enim.
+              In suscipit eu enim id sodales.
+            </p>
+          </div>
+          <div class="card-actions">
+            <a href="#addfavorite"><iconify-icon icon="fluent-mdl2:add-favorite"></iconify-icon></a>
+            <a href="#preview"><iconify-icon icon="icon-park-outline:preview-open"></iconify-icon></a>
+            <a href="#code"><iconify-icon icon="codicon:source-control"></iconify-icon></a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3>Less Cool Project</h3>
+            <p>Nam commodo, tortor vel suscipit imperdiet, augue sapien
+              suscipit felis,
+              id ultricies dolor quam id purus. Nunc vel feugiat enim.
+              Curabitur in gravida orci. Aliquam erat volutpat.</p>
+          </div>
+          <div class="card-actions">
+            <a href="#addfavorite"><iconify-icon icon="fluent-mdl2:add-favorite"></iconify-icon></a>
+            <a href="#preview"><iconify-icon icon="icon-park-outline:preview-open"></iconify-icon></a>
+            <a href="#code"><iconify-icon icon="codicon:source-control"></iconify-icon></a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3>Impossible App</h3>
+            <p>Nunc ullamcorper, sem sed efficitur convallis, ante elit
+              iaculis velit, in porta elit quam id neque.
+              Maecenas quis pretium odio. Vivamus consequat venenatis suscipit.
+              Sed non efficitur lacus.</p>
+          </div>
+          <div class="card-actions">
+            <a href="#addfavorite"><iconify-icon icon="fluent-mdl2:add-favorite"></iconify-icon></a>
+            <a href="#preview"><iconify-icon icon="icon-park-outline:preview-open"></iconify-icon></a>
+            <a href="#code"><iconify-icon icon="codicon:source-control"></iconify-icon></a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3>Easy Peasy app</h3>
+            <p>Pellentesque sodales orci malesuada arcu molestie, vitae l
+              uctus nisl volutpat. Nam a sapien at orci
+              efficitur tincidunt ut vel est. Aenean suscipit justo mattis,
+              tempor odio ac, varius dui. Proin quis enim leo.</p>
+          </div>
+          <div class="card-actions">
+            <a href="#addfavorite"><iconify-icon icon="fluent-mdl2:add-favorite"></iconify-icon></a>
+            <a href="#preview"><iconify-icon icon="icon-park-outline:preview-open"></iconify-icon></a>
+            <a href="#code"><iconify-icon icon="codicon:source-control"></iconify-icon></a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3>Ad Blocker</h3>
+            <p>Donec at quam quam. Nam elit tellus, porttitor sed varius
+              vitae, facilisis sit amet
+              felis. Etiam aliquam eros sit amet volutpat vehicula.</p>
+          </div>
+          <div class="card-actions">
+            <a href="#addfavorite"><iconify-icon icon="fluent-mdl2:add-favorite"></iconify-icon></a>
+            <a href="#preview"><iconify-icon icon="icon-park-outline:preview-open"></iconify-icon></a>
+            <a href="#code"><iconify-icon icon="codicon:source-control"></iconify-icon></a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3>Money Maker</h3>
+            <p>Proin id auctor velit, vel fermentum ligula. Fusce vitae purus
+              quis orci vehicula interdum quis eget dui.
+              Curabitur arcu
+              turpis, luctus ut consectetur ut, rhoncus nec magna. Maecenas sed
+              erat nec neque placerat vestibulum vel vel ex.</p>
+          </div>
+          <div class="card-actions">
+            <a href="#addfavorite"><iconify-icon icon="fluent-mdl2:add-favorite"></iconify-icon></a>
+            <a href="#preview"><iconify-icon icon="icon-park-outline:preview-open"></iconify-icon></a>
+            <a href="#code"><iconify-icon icon="codicon:source-control"></iconify-icon></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="things">
+      <div>
+        <h2>Announcements</h2>
+        <div class="announcements card">
+          <div class="message">
+            <h3>Site Maintenance</h3>
+            <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua.</p>
+          </div>
+          <div class="message">
+            <h3>Community Share Day</h3>
+            <p>Etiam laoreet malesuada nisl, fringilla accumsan arcu. Fusce finibus
+              a pretium dolor ornare!</p>
+          </div>
+          <div class="message">
+            <h3>Updated Privacy Policy</h3>
+            <p>Donec at quam quam. Nam elit tellus, porttitor sed varius vitae,
+              Etiam aliquam eros sit amet volutpat vehicula.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>Trending</h2>
+        <div class="trending card">
+          <div class="trend">
+            <img src="./img/astronaut.png" alt="avatar" class="avatar" />
+            <p class="name">@nicholas</p>
+            <p>boldy going where
+              where no one has gone before
+            </p>
+          </div>
+          <div class="trend">
+            <img src="./img/man.png" alt="avatar" class="avatar" />
+            <p class="name">@codejedi</p>
+            <p>dedicated to mastering the craft</p>
+          </div>
+          <div class="trend">
+            <img src="./img/cat.png" alt="avatar" class="avatar" />
+            <p class="name">@thedude</p>
+            <p>Hello, how are you today? :)</p>
+          </div>
+          <div class="trend">
+            <img src="./img/batman.png" alt="avatar" class="avatar" />
+            <p class="name">@batman</p>
+            <p>I'm batman!</p>
+          </div>
+        </div>
+      </div>
+  </main>
+
+</body>
+
+</html>
